@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Company Name | Customer Details</title>
+
+</head>
+	<frameset rows="*,70%,10%"> <frame src="header.html"> <frameset cols="*,*"> <frame src="details.html"> <frame src="items.html"> </frameset> <frame src="footer.html">
+	</frameset>	
+</html>
+
+<!- Related files header.html, footer.html, items.html, details.html -->
