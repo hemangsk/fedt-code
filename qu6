@@ -1,0 +1,21 @@
+import java.sql.*;  
+class InsertPrepared{  
+public static void main(String args[]){  
+try{  
+Class.forName("oracle.jdbc.driver.OracleDriver");  
+  
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:3600:xe","system","oracle");  
+  
+PreparedStatement stmt=con.prepareStatement("UPDATE EMPLOYEE set address=? where id=?");  
+stmt.setString(1,"Gurgaon");  
+stmt.setInt(2,1);  
+  
+int i=stmt.executeUpdate();  
+System.out.println(i+" records updated");  
+  
+con.close();  
+  
+}catch(Exception e){ System.out.println(e);}  
+  
+}  
+}  
