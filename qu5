@@ -1,0 +1,25 @@
+import java.sql.*;  
+class Test{  
+public static void main(String ar[]){  
+ try{  
+   String database="student.mdb";//Here database exists in the current directory  
+  
+   String url="jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};  
+                    DBQ=" + database + ";DriverID=22;READONLY=true";  
+  
+   Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");  
+   Connection c=DriverManager.getConnection(url);  
+   
+   PreparedStatement stmt=con.prepareStatement("INSERT INTO Employee_2017 values(?,?,?,?,?)");  
+   stmt.setInt(1,00E101); // Employee ID
+   stmt.setString(2,"JOHN DOE");  // Name
+   stmt.setString(3,"Sr Engineer");   //Post
+   stmt.setString(4,"24 January 2006"); // Date of Joining
+   stmt.setString(5,"44 2C");  // Room no
+
+   int i=stmt.executeUpdate();  
+   System.out.println(i+" records inserted");  
+  
+}catch(Exception ee){System.out.println(ee);}  
+  
+}}  
