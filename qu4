@@ -1,0 +1,31 @@
+ import java.awt.*; 
+     import java.io.Serializable;
+
+     public class MediumBean extends Canvas 
+                          implements Serializable {
+
+       private Color color = Color.green;
+
+       //property getter method 
+       public Color getColor(){ 
+          return color; 
+       }
+
+       //Property setter method. Sets new inside color and repaints. 
+       public void setColor(Color newColor){ 
+          color = newColor; 
+          repaint(); 
+       }
+
+       public void paint(Graphics g) { 
+        g.setColor(color); 
+        g.fillRect(20, 5, 20, 30); 
+       }
+
+       //Constructor sets inherited properties 
+       public MediumBean(){ 
+        setSize(60,40); 
+        setBackground(Color.red); 
+       } 
+     }
+
