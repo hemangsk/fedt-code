@@ -1,0 +1,9 @@
+<!DOCTYPE icard
+[
+<!ELEMENT icard (enrol, name, fname, course, validity)>
+<!ELEMENT enrol (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT valdiity (#PCDATA)>
+]>
