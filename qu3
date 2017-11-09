@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE icard SYSTEM "icard.dtd">
+<icard>
+	<enrol>213123123</enrol>
+	<name>John</name>
+	<fname>John Sr</fname>
+	<course>B Tech CSE</course>
+	<validity>31/07/2018</validity>
+</icard>
